@@ -44,8 +44,13 @@ stories:
   - intent: barbearia_cabelereiro
   - action: utter_cabelos
 
-- story: forma gerais de prevencao
+- story: formas gerais de prevencao
   steps:
   - intent: formas_gerais_de_prevencao
   - action: utter_formas_gerais_de_prevencao
+
+- story: sintomas
+  steps:
+  - intent: sintomas
+  - action: utter_sintomas
 
