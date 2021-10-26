@@ -1,26 +1,10 @@
-from typing import Any, Text, Dict, List
 
-import requests
-from rasa_sdk import Action, Tracker
-from rasa_sdk.executor import CollectingDispatcher
+# -*- coding: utf-8 -*-
 
+from actions.ResponderVacinadosEmUmEstadoAction import ResponderVacinadosEmUmEstadoAction
+from actions.ResponderSobreCovidAction import ResponderSobreCovidAction
+from actions.ResponderLembreteProximaVacinaAction import ActionCadastrarLembrete, ActionLembrarUsuario
+from actions.ResponderQuantidadeInfectadosPorPeriodoAction import ResponderQuantidadeInfectadosPorPeriodoAction
+from actions.ResponderQuantidadeMortosPorPeriodoAction import ResponderQuantidadeMortosPorPeriodoAction
+from actions.ResponderQuantidadeVacinadosPorPeriodoAction import ResponderQuantidadeVacinadosPorPeriodoAction
 
-class JokeAction(Action):
-  def name(self) -> Text:
-    return "action_joke"
-
-  def run(
-    self,
-    dispatcher: CollectingDispatcher,
-    tracker: Tracker,
-    domain: Dict[Text, Any]
-  ) -> List[Dict[Text, Any]]:
-    req = requests.get(
-      'https://official-joke-api.appspot.com/jokes/random').json()
-    setup = req['setup']
-
-    punchline = req['punchline']
-    dispatcher.utter_message(text=setup)
-    dispatcher.utter_message(text=punchline)
-    print("hello")
-    return []

@@ -10,6 +10,8 @@ nlu:
     - Ola
     - Bom dia
     - Boa Tarde
+    - Alo
+    - Como vai
 
     
 - intent: despedida
@@ -19,12 +21,19 @@ nlu:
     - flw
     - obrigado bot
     - tchau
+    - Fui
+    - Ate logo
+    - conversamos mais depois
+    - quero parar
+    - finalizar
+    - parar
 
 - intent: covid
   examples: |
-    - o que e covid ?
-    - covid
-
+    - o que e Covid-19 ?
+    - Covid-19
+    - Quero saber mais sobre o que é a Covid-19?
+    
 - intent: fora_do_escopo
   examples: |
     - Quero pedir comida
@@ -86,26 +95,30 @@ nlu:
   examples: |
     - quero saber sobre alfa
     - me fale sobre alfa
-    - alfa mais
-    - Alfa +
     - mais alfa
     - mais sobre alfa
     - mais alfa
+    - quero mais detalhes sobre a alfa
+    - detalhe alfa
 
 - intent: beta
   examples: |
-    - beta
     - Beta
+    - beta
     - bet
+    - Bet
+    - BETA
 
 - intent: mais_beta
   examples: |
     - quero saber sobre beta
     - me fale sobre beta
-    - beta +
-    - Beta +
     - mais beta
     - mais sobre beta
+    - mais bet
+    - mais detalhe beta
+    - detalhe beta
+    - quero mais detalhes sobre a beta
 
 - intent: gama
   examples: |
@@ -120,6 +133,9 @@ nlu:
     - me fale sobre gama
     - mais Gama
     - mais sobre gama
+    - mais detalhe gama
+    - detalhe gama
+    - quero mais detalhes sobre a gama
 
 - intent: delta
   examples: |
@@ -133,7 +149,186 @@ nlu:
     - me fale sobre Delta
     - mais Delta
     - mais sobre delta
-   
+    - mais detalhe delta
+    - detalhe delta
+    - quero mais detalhes sobre a delta
+
+- intent: formas_gerais_de_prevencao
+  examples: |
+    - Como posso me prevenir?
+    - Como posso me prevenir do COVID?
+    - Como posso me previnir?
+    - Como posso me previnir do COVID?
+    - Como posso me prevenir do COVID-19?
+    - Como posso me prevenir contra o COVID?
+    - Como posso me prevenir contra o COVID-19?
+    - Quais são as formas gerais de prevenção?
+    - Quais são as formas gerais de prevenção do COVID-19?
+    - Quais são as formas gerais de prevenção contra o COVID-19?
+    - Como posso tomar cuidado?
+    - Como me prevenir?
+    - Como me prevenir contra o COVID?
+    - Como me prevenir contra o COVID-19?
+    - O que posso fazer para me previnir do COVID-19?
+    - Como se prevenir?
+    - Como se previnir?
+    - Qual o triângulo da prevenção?
+
+
+- intent: uso_correto_mascara
+  examples: |
+    - Como usar a máscara corretamente?
+    - Uso correto de máscaras
+    - Como devo usar a máscara?
+    - Usar máscara de forma certa
+    - Como usar máscara de forma certa?
+    - Como usar máscara de maneira certa?
+
+- intent: tipos_de_mascaras
+  examples: |
+    - Desejo saber sobre os tipos de máscaras
+    - Quais são os tipos de máscaras?
+    - Quais tipos de máscaras posso usar?
+    - Tipos de máscaras
+    - Eficácia dos tipos de máscaras
+
+
+- intent: cuidados_em_locais_abertos  
+  examples: |
+    -Como se previnir da covid-19 em locais abertos?
+    -Como se previnir da covid-19 em ambientes abertos?
+    -Quais cuidados devo ter em locais abertos?
+    -Quais cuidados devo ter em ambientes abertos?
+    -Cuidados que devo ter em locais abertos
+    -Cuidados em ambientes abertos
+    -Cuidados em locais abertos
+    -Prevenção em locais abertos
+    -Prevenção em ambientes abertos
+    
+- intent: cuidados_em_locais_fechados 
+  examples: |
+    -Como se previnir da covid-19 em locais fechados?
+    -Como se previnir da covid-19 em ambientes fechados?
+    -Quais cuidados devo ter em locais fechados?
+    -Quais cuidados devo ter em ambientes fechados?
+    -Cuidados que devo ter em locais fechados
+    -Cuidados em ambientes fechados
+    -Cuidados em locais fechados
+    -Prevenção em locais fechados
+    -Prevenção em ambientes fechados
+    
+- intent: diferenca_locais_abertos_e_fechados 
+  examples: |
+    -Qual a diferença de contaminação entre locais abertos e fechados?
+    -Qual a diferença de contaminação entre ambientes abertos e fechados?
+    -Qual a diferença de risco de contaminação entre ambientes abertos e fechados?
+    -Qual a diferença de risco de contaminação entre locais abertos e fechados?
+    -Em qual local corro mais risco de pegar covid? locais abertos ou fechados?  
+    -Em qual local corro mais risco de pegar coronavirus? locais abertos ou fechados?  
+    -Em qual ambiente corro mais risco de pegar covid? ambientes abertos ou fechados?
+    -Em qual ambiente corro mais risco de pegar coronavirus? ambientes abertos ou fechados?   
+
+- intent: cuidados_em_restaurantes
+  examples: |
+    - Cuidados que devo ter em restaurantes
+    - Quais cuidados devo ter em restaurantes?
+    - Quais cuidados devo tomar em restaurantes?
+    - Quais cuidados devo ter  em restaurantes para me proteger do COVID-19?
+    - Devo tomar quais cuidados em restaurantes para me proteger do COVID-19?
+    - Como me proteger do COVID-19  em restaurantes
+    - Vou  a um restaurante, como posso me proteger do COVID-19?
+    - Cuidados em restaurantes para me proteger do COVID-19?
+    - Cuidados em  restaurantes
+    - Quero saber sobre os cuidados  em restaurantes
+    - Se manter seguro  em restaurantes
+    - Se manter segura  em restaurantes
+    - Preteger-se  em restaurantes
+    - Se proteger  em restaurantes
+
+- intent: cuidados_na_academia
+  examples: |
+    - Quais cuidados devo ter na academia para me proteger do COVID-19?
+    - Devo tomar quais cuidados na academia para me proteger do COVID-19?
+    - Como me proteger do COVID-19 na academia
+    - Vou para a academia, como posso me proteger do COVID-19?
+    - Cuidados na academia para me proteger do COVID-19?
+    - Cuidados em academia
+    - Quero saber sobre os cuidados na academia
+    - Se manter seguro na academia
+    - Se manter segura na academia
+    - Preteger-se na academia
+    - Se proteger na academia
+
+- intent: cuidados_no_dentista
+  examples: |
+    - Quais cuidados devo ter no dentista para me proteger do COVID-19?
+    - Devo tomar quais cuidados no dentista para me proteger do COVID-19?
+    - Como me proteger do COVID-19 no dentista
+    - Vou para o dentista, como posso me proteger do COVID-19?
+    - Cuidados no dentista para me proteger do COVID-19?
+    - Cuidados no dentista
+    - Quero saber sobre os cuidados no dentista
+    - Se manter seguro no dentista
+    - Se manter segura no dentista
+    - Preteger-se no dentista
+    - Se proteger no dentista
+
+- intent: barbearia_cabelereiro
+  examples: |
+    - Quais cuidados devo ter no cabeleireiro para me proteger do COVID-19?
+    - Quais cuidados devo ter na Barbearia para me proteger do COVID-19?
+    - Como devo me portar no cabeleireiro 
+    - Como devo me portar na barbearia
+
+- intent: sintomas
+  examples: |
+    - quais são os sintomas?
+    - quais são os sintomas do COVID-19?
+    - sintomas principais do COVID-19
+    - quero saber os sintomas do COVID-19
+    - pode me dizer quais são os sintomas do COVID-19?
+
+- intent: saude_mental
+  examples: |
+    - Como posso manter a saúde mental?
+    - O que posso fazer para manter a saúde mental?
+    - Saúde mental
+    - Como melhorar da cabeça
+    - Como não surtar
+    - Como nao ter um surto
+    - Como nao enlouquecer dentro de casa
+    - O que posso fazer para não surtar em casa?
+    
+- intent: covid_em_sua_cidade
+  examples: |
+    - Desejo saber a quantidade de infectados por covid na minha cidade e quantidade de mortos por covid na minha cidade
+    - Desejo saber a quantidade de contaminados por covid na minha cidade e quantidade de mortos por covid na minha cidade
+    - Desejo saber o número de infectados por covid na minha cidade e o número de mortos por covid na minha cidade
+    - Desejo saber o número de contaminados por covid na minha cidade e o número de mortos por covid na minha cidade
+
+- intent: uf_input_form
+  examples: |
+    - Meu estado é DF
+    - Eu moro no estado do DF
+    - Minha uf é DF
+    - Minha unidade federativa é DF
+    - Eu vivo no estado do DF
+
+- intent: cidade_input_form
+  examples: |
+    - Minha cidade é Brasília
+    - Eu moro na cidade do São Paulo
+    - Minha cidade é São Luís
+    - Eu vivo na cidade do Brasília
+
+- intent: cuidados_comercio_geral
+  examples: |
+    - Desejo saber os cuidados que devo ter em comércios no geral
+    - Cuidados no comércio 
+    - Quais cuidados devo ter no comércio em geral para me proteger do COVID-19?
+    - Quais cuidados devo ter no comércio para me proteger do COVID-19?
+    - Como devo me portar no comércio em geral? 
+
 - intent: bot_alligabot
   examples: |
     - Você é um bot?
@@ -146,5 +341,312 @@ nlu:
     - Você é uma pessoa real?
     - Você é um robô?
     - O que você é?
+
+- intent: vacina_eh_segura
+  examples: |
+    - A vacina é segura?
+    - A Pfizer é segura?
+    - A Astrazeneca é segura?
+    - A Fiocruz é segura?
+    - A Coronavac é segura?
+    - A sputnik v é segura?
+    - A Covaxin é segura?
+    - A vacina do butatã é segura?
+    - A Johnson & Johnson é segura?
+    - A janssen é segura? 
+    - A moderna é segura?
+    - Segurança da vacina
+    - Posso confiar na vacina?
+    - É arriscado tomar as vacinas?
+    - É perigoso eu virar jacaré me vacinando?
+    - Tenho medo de tomar a vacina
+
+- intent: cuidados_escritorio
+  examples: |
+    - Que cuidados eu devo tomar no escritório?
+    - Que cuidados eu devo tomar no trabalho?
+    - escritório
+    - Cuidados no escritório
+    - Como posso me previnir do COVID no trabalho?
+    - Como posso me previnir do COVID no escritório?
+    - Vou trabalhar?
+    - Vou ao escritório
+    - trabalho 
+    - Posso ir trabalhar?
+    - Posso ir ao escritório?
+
+- intent: preciso_me_vacinar
+  examples: |
+    - Preciso me vacinar?
+    - É necessário tomar a vacina?
+    - Todo mundo precisa tomar a vacina?
+    - Quem precisa tomar a vacina?
+    - Já peguei covid-19, preciso tomar a vacina?
+    - Já peguei covid-19, preciso me vacinar?
+    - sou jovem, preciso tomar vacina?
+    - Tenho que me vacinar?
+    - Meu vizinho tem que se vacinar?
+
+- intent: cuidados_no_atendimento
+  examples: |
+    - Como me cuidar ao atender clientes?
+    - Como me proteger ao atender clientes?
+    - Como me cuidar no atendimento?
+    - Como me previnir no atendimento?
+    - Como me proteger no atendimento?
+    - Como me previnir contra o COVID-19 no atendimento?
+    - Como me proteger do COVID-19 no atendimento?
+    - O que posso fazer para me previnir dos clientes?
+    - O que posso fazer para me proteger do COVID-19 dos clientes?
+    - O que posso fazer para me previnir do COVID-19 dos clientes?
+    - Cuidados no atendimento
+    - Atendimento ao cliente
+    - O que fazer para me previnir do COVID-19 no atendimento?
+    - O que fazer para me previnir do COVID-19 no atendimento ao cliente?
+    - O que fazer para me proteger do COVID-19 no atendimento ao cliente?
+
+- intent: vacinados_no_meu_estado
+  examples: |
+    - Quantas pessoas foram vacinadas no estado de Amazonas?
+    - Quantas pessoas foram vacinadas no estado de Rio Grande do Sul?
+    - Quantas pessoas foram vacinadas aqui?
+    - Quantas doses de vacina foram distribuídas no meu estado?
+    - quantos foram vacinados onde eu moro?
+    - vacinados no meu estado
+    - vacinados no meu estado?
+    - quantas pessoas estão vacinadas no meu estado atualmente?
+
+- intent: exercicios_em_casa
+  examples: |
+    - Como posso me exercitar em casa?
+    - Como fazer exercicios em casa?
+    - Como se exercitar em casa?
+    - Se não posso sair de casa, como vou me exercitar?
+    - Dicas de exercicios caseiros
+    - Como posso treinar em casa?
+    - Treinar em casa
+
+- intent: cuidados_transporte_publico
+  examples: |
+    - Transporte público
+    - Como posso me proteger do COVID-19 no transporte público?
+    - Como me cuidar no transporte público?
+    - O que fazer para me previnir do COVID-19 no transporte público?
+    - Como me previnir do COVID no transporte?
+    - O que eu posso fazer para me proteger do COVID no transporte público?
+    - Que cuidados eu devo tomar no transporte público?
+    - Que cuidados eu devo tomar no transporte?
+    - COVID no Transporte público
+    - Formas de prevenção no transporte público
+    - Proteção contra o COVID no transporte público
+
+- intent: doses_vacina
+  examples: |
+    - Quantas doses preciso tomar?
+    - doses da vacina
+    - posso tomar uma dose apenas
+    - quero tomar só uma dose
+    - preciso tomar outra dose?
+    - quantas vacinas?
+    - quantas vacinas tenho que tomar?
+    - quantas vezes tomo a vacina?
+    - quantidade de doses
+    - quantas vacinas tomar
+
+- intent: qual_exame_fazer
+  examples: |
+    - Qual tipo de teste eu faço?
+    - Qual o teste mais indicado pra mim?
+    - Qual teste fazer?
+    - tenho sintomas e quero me testar
+    - quero me testar
+    - que teste eu faço?
+    - testagem mais indicada
+
+- intent: exame_contato_covid
+  examples: |
+    - Tive contato com alguém contaminado
+    - Entrei em contato com o virus 
+    - Encontrei alguem com suspeita de covid
+  
+- intent: exame_com_sintomas
+  examples: |
+    - Tenho incativos de covid
+    - posso estar com indicios de covid
+    - acho que estou com sintomas de covid
+
+- intent: sintomas_mais_de_8
+  examples: |
+    - to com sintomas a mais de 8 dias
+    - estou doente já tem mais de 1 semana
+    - to na mals tem oito dias
+
+- intent: sintomas_menos_de_8
+  examples: |
+    - to com sintomas a menos de 8 dias
+    - estou doente tem poucos dias
+    - to doente a menos de uma semana
+
+- intent: exame_sem_sintomas
+  examples: |
+    - não tenho sintomas
+    - não estou com sintomas
+    - tive contato com alguém com covid
+    - tive contato com alguém com suspeita
+
+- intent: contato_mais_de_10
+  examples: |
+    - tive contato com o virus a mais de 10 dias
+    - passei com alguem contaminado a mais de 10 dias
+    - tem mais de 10 dias
+
+- intent: contato_menos_de_10
+  examples: |
+    - tive contato com o virus a menos de 10 dias
+    - entrei em contato com alguem contaminado entre 10 dias
+    - tem menos de 10 dias
+  
+- intent: vacina_no_organismo
+  examples: |
+    - Como as vacinas funcionam?
+    - Como a vacina age no organismo?
+    - Funcionamento da vacina
+    - como a Janssen funciona?
+    - como a Pfizer age no organismo?
+    - como acontece a imunizaçao pela Coronavac?
+    - como a vacina Astrazeneca se comporta no organismo?
+
+- intent: quando_vacinar
+  examples: |
+    - Quando posso vacinar?
+    - Já posso me vacinar?
+    - Meu filho pode se vacinar?
+    - Criança pode se vacinar?
+    - Quem já se vacinou?
+    - Idade para vacinar
+    - Idade para vacinação
+
+- intent: teste_positivo
+  examples: |
+    - positivo
+    - Testei positivo
+    - Testei positivo, o que fazer?
+    - O que fazer quando der positivo no teste?
+    - Teste positivo
+    - O que fazer depois do positivo?
+
+- intent: cadastrar_data_proxima_dose_vacina
+  examples: |
+    - Cadastrar a data da próxima dose da vacina
+    - Cadastrar a data da segunda dose da vacina
+    - Registrar a data da próxima dose da vacina
+    - Registrar a data da segunda dose da vacina
+    - Cadastrar próxima dose da vacina
+
+- intent: vacina_eficacia
+  examples: |
+    - eficácia vacina
+    - eficácia
+    - qual a eficácia das vacinas?
+    - como posso saber se as vacinas são eficazes?
+    - estarei imunizado se tomar a vacina?
+    - qual a chance de eu pegar covid pós tomar vacina?
+
+- intent: eficacia_pfizer
+  examples: |
+    - eficácia da pfizer
+    - qual a eficácia da pfizer?
+    - pfizer funciona mesmo?
+    - porcentagem da eficacia da pfizer
+    - taxa de eficacia pfizer
+    - é eficaz tomar pfizer?
+    - é eficaz me vacinar com pfizer?
+    - a eficacia da pfizer é comprovada?
+
+- intent: eficacia_da_coronavac
+  examples: |
+    - eficácia da coronavac
+    - qual a eficácia da coronavac?
+    - coronavac funciona mesmo?
+    - porcentagem da eficacia da coronavac
+    - taxa de eficacia coronavac
+    - é eficaz tomar coronavac?
+    - é eficaz me vacinar com coronavac?
+    - a eficacia da coronavac é comprovada?
     
+- intent: eficacia_janssen
+  examples: |
+    - eficácia da janssen
+    - qual a eficácia da janssen?
+    - janssen funciona mesmo?
+    - porcentagem da eficacia da janssen
+    - taxa de eficacia janssen
+    - é eficaz tomar janssen?
+    - é eficaz me vacinar com janssen?
+    - a eficacia da janssen é comprovada?
+
+- intent: eficacia_astrazeneca
+  examples: |
+    - eficácia da astrazenica
+    - qual a eficácia da astrazenica?
+    - qual a eficácia da astrazeneca?
+    - astrazeneca funciona mesmo?
+    - porcentagem da eficacia da astrazeneca
+    - taxa de eficacia astrazeneca
+    - é eficaz tomar astrazeneca?
+    - é eficaz me vacinar com astrazeneca?
+    - a eficacia da astrazeneca é comprovada?
+
+- intent: oque_fazer_suspeita
+  examples: |
+    - suspeita covid
+    - o que fazer caso esteja com suspeita de covid?
+    - estou com suspeita de covid-19, o que fazer?
+    - estou com sintomas de corona
+    - estou com sintomas de covid-19
+
+- intent: local_teste
+  examples: |
+    - Onde me testar?
+    - Local de teste
+    - Estou com covid, aonde fazer o teste?
+    - Qual lugar fazer o teste?
+    - Localidade de testagem
+    - Onde é que eu me testo?
+    - Onde é o lugar para fazer o teste de covid?
+
+- intent: quantidade_de_infectados_por_periodo
+  examples: |
+    - Desejo saber a quantidade de infectados pelo covid-19 por período
+    - Desejo saber a quantidade de contaminados por covid por período
+    - Desejo saber o número de infectados por covid por período
+    - Desejo saber o número de contaminados por covid por período  
+
+- intent: quantidade_de_mortos_por_periodo
+  examples: |
+    - Me informe a quantidade de mortos pelo covid-19 por período
+    - Quero saber sobre o número de mortos por período
+    - Me interesso em saber sobre quantidade de mortos pelo covid-19 por período
+    - Quantos seriam os mortos pelo covid-19 por período?
+    - Me informe a quantidade de mortos pelo covid-19 por período
+    - Qual seria a quantidade de mortos por período?
+
+- intent: quantidade_de_vacinados_por_periodo
+  examples: |
+    - Desejo saber a quantidade de vacinados contra o covid-19 por período
+    - Quero saber os vacinados por período
+    - Tenho interesse em saber a quantidade de vacinados contra o covid-19 por período
+    - Quantos são os vacinados contra o covid-19 por período?
+    - Me fala sobre a quantidade de vacinados contra o covid-19 por período
+    - Qual a quantidade de vacinados por período?
+    - Vacinados por período
+    - Total de vacinados por período
+
+- intent: cadastrar_data_proxima_dose_vacina
+  examples: |
+    - Cadastrar a data da próxima dose da vacina
+    - Cadastrar a data da segunda dose da vacina
+    - Registrar a data da próxima dose da vacina
+    - Registrar a data da segunda dose da vacina
+    - Cadastrar próxima dose da vacina
 

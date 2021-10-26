@@ -1,16 +1,24 @@
 
 <p align="center">
-  <img width="300" src="docs/img/logo.png">
+  <img width="300" src="docs/assets/img/logo.png">
 </p>
 <h1 align="center">AlligaBot</h1>
 
-<!-- [badges] [badges] [badges] [badges]  -->
-
+ ![GitHub issues](https://img.shields.io/github/issues/fga-eps-mds/2021.1-AlligaBot?color=red)
+ ![GitHub closed issues](https://img.shields.io/github/issues-closed/fga-eps-mds/2021.1-AlligaBot?color=green)
+ ![GitHub pull requests](https://img.shields.io/github/issues-pr/fga-eps-mds/2021.1-AlligaBot?color=orange)
+ ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/fga-eps-mds/2021.1-AlligaBot?color=brightgreen)
+ ![GitHub branches](https://badgen.net/github/branches/fga-eps-mds/2021.1-AlligaBot/)
+ ![GitHub repo size](https://img.shields.io/github/repo-size/fga-eps-mds/2021.1-AlligaBot?color=purple)
+ ![GitHub contributors](https://img.shields.io/github/contributors/fga-eps-mds/2021.1-AlligaBot?color=ff69b4)
+ ![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)
+<!-- ![GitHub commits count](https://badgen.net/github/commits/fga-eps-mds/2021.1-AlligaBot/)
+<!-- [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/fga-eps-mds/2021.1-AlligaBot/blob/main/LICENSE) -->
 
 ## 💻 Visão Geral
 O AlligaBot propõe-se a ajudar a combater desinformação
 no contexto da pandemia do COVID-19, facilitando a  divulgação 
-de informações importantes através de um bot que responderá as duvidas
+de informações importantes através de um chat bot que responderá as dúvidas
 mais frequentes.
 	
 
@@ -27,10 +35,14 @@ ajudar no combate mundial ao vírus.
     - Tópico 1
     - Tópico 2 -->
 
-<!-- ## 📦 Releases 1 e 2
-  Release 1 - 2 de setembro
+ ## 📦 Releases
+  Release 1 - 14 de setembro
+  - [Apresentação Geral](https://youtu.be/S_MtOdIb13s)
+  - [Apresentação Equipe Capivaras](https://www.youtube.com/watch?v=TWQMUeZd9EY)
+  - [Apresentação Equipe Plus Ultra](https://www.youtube.com/watch?v=5FDRdg9cj_k)
+  - [Apresentação Equipe Slowbros](https://www.youtube.com/watch?v=mxh4G5HwLlE)
   
-  Release 2 - 26 de outubto -->
+<!--  Release 2 - 28 de outubto -->
 
 ## 🚀 Como executar o projeto
 ### 🛠 Tecnologias e Pré-Requisitos
@@ -41,32 +53,49 @@ Esse projeto usa algumas ferramentas para o seu desenvolvimento:
 desenvolvimento em Windows 10
 - [Make](https://www.gnu.org/software/make/)
 
+Você pode assistir esse [vídeo](https://www.youtube.com/watch?v=oQ08ZaOAiGU)
+para instalar as ferramentas do Docker e o WSL no Windows 10. Além disso, note
+que Docker Compose é um programa diferente do Docker e deve ser instalado 
+separadamente.
+
 ### ✔️ Instalando e executando
 Baixe o repositório e entre nele
 
-    git clone https://github.com/fga-eps-mds/2021-1-Bot.git
-    cd 2021-1-Bot
+    git clone https://github.com/fga-eps-mds/2021.1-AlligaBot.git
+    cd 2021.1-AlligaBot
 
+Crie um arquivo para as variáveis ambiente e o preencha com as
+informações que faltam.
+
+    cp .example.env .env
+
+Para preencher essas variáveis, dê uma olhada na seção da 
+[FAQ "Onde conseguir os tokens e as variáveis de ambiente?"](docs/_posts/2021-09-16-faq.md).
 Faça build das imagens rodando o seguinte comando:
 
     make build 
 
-Se esta é a su primeira vez executando esse comando, isso pode levar 
-alguns minutos. Em seguida, treine o bot executando:
+Se esta é a sua primeira vez executando esse comando, isso pode levar 
+alguns minutos. Em seguida suba os contêineres com
+
+    make run
+
+Então, treine o bot executando:
 
     make train
 
 
-Para conversar com o bot, execute o seguinte:
+Para conversar com o chatBot, execute o seguinte:
 
     make shell
 
+Para sair do shell, digite `/stop` ou faça <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 Não se esqueça de desligar os containers quando terminar sua sessão de
 desenvolvimento. Para desligar os contêineres basta executar:
 
     make stop
 
-Se você quiser adicionar novos diálogos ao bot você deve fazer alterações 
+Se você quiser adicionar novos diálogos ao AlligaBot você deve fazer alterações 
 no arquivos `bot/domain.yml` e `bot/data/*.yml`, e, em seguida, deve treiná-lo
 novamente:
 
@@ -75,13 +104,13 @@ novamente:
 
 ## 🤝 Como contribuir para o projeto
 
-[Guia de Contribuição](docs/CONTRIBUTING.md)
+[Guia de Contribuição](docs/_posts/2021-08-16-como-contribuir.md)
 
-[Código de Conduta](docs/CODE_OF_CONDUCT.md)
+[Código de Conduta](docs/_posts/2021-08-21-code_of_conduct.md)
 
-[Política de Branches](docs/politicas/branches.md)
+[Política de Branches](docs/_posts/2021-08-19-branches.md)
 
-[Políticas de Commits](docs/politicas/commits.md)
+[Políticas de Commits](docs/_posts/2021-08-18-commits.md)
 
 [Template para criação de issues](.github/ISSUE_TEMPLATE/custom.md)
 
@@ -135,5 +164,5 @@ novamente:
 
 ## 📝 Licença
 Este projeto está licenciado sob os termos da licença 
-[GNU GPL v3.0](https://github.com/fga-eps-mds/2021-1-Bot/blob/improvement(%2398)/melhorar-readme/LICENSE).
+[GNU GPL v3.0](./LICENSE).
 
