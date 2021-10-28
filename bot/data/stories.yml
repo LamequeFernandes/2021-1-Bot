@@ -1,4 +1,4 @@
-version: "2.0"
+﻿version: "2.0"
 
 stories:
 
@@ -73,40 +73,20 @@ stories:
   - intent: alfa
   - action: utter_alfa
 
-- story: Mais alfa
-  steps:
-  - intent: mais_alfa
-  - action: utter_mais_alfa
-
 - story: beta
   steps:
   - intent: beta
   - action: utter_beta
-
-- story: Mais beta
-  steps:
-  - intent: mais_beta
-  - action: utter_mais_beta
 
 - story: Gama
   steps:
   - intent: gama
   - action: utter_gama
 
-- story: Gama mais
-  steps:
-  - intent: mais_gama
-  - action: utter_gama_mais
-
 - story: Delta
   steps:
   - intent: delta
   - action: utter_delta
-
-- story: Delta mais
-  steps:
-  - intent: mais_delta
-  - action: utter_delta_mais
 
 - story: Como se portar no Cabeleiro/barbearia
   steps:
@@ -295,24 +275,29 @@ stories:
 
 - story: Informando ao usuário a quantidade de infectados por período
   steps:
-  - intent: quantidade_de_infectados_por_periodo
-  - action: cadastro_data_form
-  - active_loop: cadastro_data_form
-  - active_loop: null
-  - action: action_responder_quantidade_infectados_por_periodo
+    - intent: quantidade_de_infectados_por_periodo
+    - action: cadastro_data_form
+    - active_loop: cadastro_data_form
+    - active_loop: null
+    - action: action_responder_quantidade_infectados_por_periodo
 
 - story: Informando ao usuário a quantidade de mortos por período
   steps:
-  - intent: quantidade_de_mortos_por_periodo
-  - action: cadastro_data_form
-  - active_loop: cadastro_data_form
-  - active_loop: null
-  - action: action_responder_quantidade_mortos_por_periodo
+    - intent: quantidade_de_mortos_por_periodo
+    - action: cadastro_data_form
+    - active_loop: cadastro_data_form
+    - active_loop: null
+    - action: action_responder_quantidade_mortos_por_periodo
 
 - story: Informando ao usuário a quantidade de vacindaos por período
   steps:
-  - intent: quantidade_de_vacinados_por_periodo
-  - action: cadastro_data_form
-  - active_loop: cadastro_data_form
-  - active_loop: null
-  - action: action_responder_quantidade_vacinados_por_periodo
+    - intent: quantidade_de_vacinados_por_periodo
+    - action: cadastro_data_form
+    - active_loop: cadastro_data_form
+    - active_loop: null
+    - action: action_responder_quantidade_vacinados_por_periodo
+
+- story: fim das interações com o bot
+  steps:
+  - intent: stop
+  - action: utter_adeus
